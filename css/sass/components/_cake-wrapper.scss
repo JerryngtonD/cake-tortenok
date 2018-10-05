@@ -1,0 +1,15 @@
+.cake-wrapper {
+    
+    width: 100%;
+
+
+    &--big {
+        max-width: 695px;
+        margin-right: auto;
+    }
+
+    &--small {
+        max-width: 485px;
+        margin-left: auto;
+    }
+}

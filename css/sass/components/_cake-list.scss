@@ -1,0 +1,16 @@
+.cake-list {
+    width: 100%;
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        min-height: 655px;
+        margin-bottom: 4rem;
+
+        &--middle {
+            
+        }
+    }
+}

@@ -1,0 +1,8 @@
+.btn {
+    @extend %btn;
+
+    &:hover,
+    &:active {
+        background-color: darken($btn-bg-color, 5%);
+    }
+}
