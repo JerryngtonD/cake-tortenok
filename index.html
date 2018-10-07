@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Тортёнок</title>
+s    <link rel="stylesheet" href="./css/swiper.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script defer src="./scripts/swiper.min.js"></script>
+    <script defer src="./scripts/cake-info-swiper.js"></script>
+
 </head>
 <body>
     <section class="header-bloock">
@@ -128,24 +132,60 @@
         <h2 class="section-title">Индивидуальный заказ</h2>
         <h3 class="block-title">Соберите торт в три шага</h3>
         <div class="cake-advantages">
-          <section class="cake-advantages__item cake-info">
+          <section class="cake-constructor">
             <div class="cake-feature">
               <h3 class="cake-feature__number">01</h3>
-              <span class="cake-feature__description">Выберите начинку<span>
+              <span class="cake-feature__description">Выберите начинку</span>
             </div>
-            <img class="cake-info__picture" src="" alt="Шоколадный ганаш" class="logo-img">
-            <div class="cake-info__description">
-              <h4 class="cake-info__header">Шоколадный ганаш</h4>
-              <p class="cake-info__text">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
-              <span class="text-info__price">1000 руб/кг</span>
-              <button class="button button--choose cake-info__choose"></button>
-              <span class="cake-type cake-type--page">1/12</span>
-            </div>
+              <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="cake-info swiper-slide">
+                      <div class="cake-info__picture">
+                          <img class="cake-info__img" src="./img/stuffing/red-velvet.jpg" alt="Шоколадный ганаш" class="logo-img" />
+                      </div>
+                        <div class="cake-info__description">
+                          <h4 class="cake-info__header">Шоколадный ганаш</h4>
+                          <p class="cake-info__text">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
+                          <span class="text-info__price">1000 руб/кг</span>
+                          <button class="btn btn--choose">Выбрать</button>
+                        </div>
+                    </div>
+                      <div class="cake-info swiper-slide">
+                          <div class="cake-info__picture">
+                              <img class="cake-info__img" src="./img/stuffing/chocolate-napoleon.jpg" alt="Шоколадный ганаш" class="logo-img" />
+                          </div>
+                          <div class="cake-info__description">
+                              <h4 class="cake-info__header">Шоколадный ганаш</h4>
+                              <p class="cake-info__text">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
+                              <span class="text-info__price">1000 руб/кг</span>
+                              <button class="btn btn--choose">Выбрать</button>
+                          </div>
+                      </div>
+                      <div class="cake-info swiper-slide">
+                          <div class="cake-info__picture">
+                              <img class="cake-info__img" src="./img/stuffing/napoleon.jpg" alt="Шоколадный ганаш" class="logo-img" />
+                          </div>
+                          <div class="cake-info__description">
+                              <h4 class="cake-info__header">Шоколадный ганаш</h4>
+                              <p class="cake-info__text">Ароматный шоколадный бисквит, густой шоколадный крем - самый шоколадный из всех возможных десертов!</p>
+                              <span class="text-info__price">1000 руб/кг</span>
+                              <button class="btn btn--choose">Выбрать</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next swipe swipe-next">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M27,22L27,22L5,44l-2.1-2.1L22.8,22L2.9,2.1L5,0L27,22L27,22z" /></svg>
+              </div>
+              <div class="swiper-button-prev swipe swipe-prev">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 44"><path d="M0,22L22,0l2.1,2.1L4.2,22l19.9,19.9L22,44L0,22L0,22L0,22z" /></svg>
+              </div>
           </section>
-          <section class="cake-advantages__item cake-info">
+          <section class="cake-size">
             <div class="cake-feature ">
               <h3 class="cake-feature__number">02</h3>
-              <span class="cake-feature__description">Размер<span>
+              <span class="cake-feature__description">Размер</span>
             </div>
             <ul class="cake-types">
               <li class="cake-types__item cake-layer">
@@ -170,10 +210,10 @@
               </li>
             </ul>
           </section>
-          <section class="cake-advantages__item cake-info">
+          <section class="cake-view">
             <div class="cake-feature ">
               <h3 class="cake-feature__number">03</h3>
-              <span class="cake-feature__description">Оформление<span>
+              <span class="cake-feature__description">Оформление</span>
             </div>
             <div class="cake-design">
               <img class="cake-design__make-view" src="" alt="Cделай свой уникальный торт"/>

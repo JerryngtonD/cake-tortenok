@@ -1,0 +1,21 @@
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev,
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next{
+  background-image: none;
+  fill: #f50049;
+  width: 15px;
+  height: 20px;
+}
+
+.swiper-button {
+  &-next {
+    right: 5%;
+  }
+
+  &-prev {
+    left: 17%;
+  }
+}
+
+
